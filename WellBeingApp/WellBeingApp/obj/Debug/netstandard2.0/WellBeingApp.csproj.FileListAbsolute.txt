@@ -1,0 +1,16 @@
+C:\Users\debie\source\repos\WellBeingApp\WellBeingApp\obj\Debug\netstandard2.0\WellBeingApp.csprojAssemblyReference.cache
+C:\Users\debie\source\repos\WellBeingApp\WellBeingApp\bin\Debug\netstandard2.0\WellBeingApp.deps.json
+C:\Users\debie\source\repos\WellBeingApp\WellBeingApp\bin\Debug\netstandard2.0\WellBeingApp.dll
+C:\Users\debie\source\repos\WellBeingApp\WellBeingApp\bin\Debug\netstandard2.0\ref\WellBeingApp.dll
+C:\Users\debie\source\repos\WellBeingApp\WellBeingApp\bin\Debug\netstandard2.0\WellBeingApp.pdb
+C:\Users\debie\source\repos\WellBeingApp\WellBeingApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\debie\source\repos\WellBeingApp\WellBeingApp\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs
+C:\Users\debie\source\repos\WellBeingApp\WellBeingApp\obj\Debug\netstandard2.0\WellBeingApp.AssemblyInfoInputs.cache
+C:\Users\debie\source\repos\WellBeingApp\WellBeingApp\obj\Debug\netstandard2.0\WellBeingApp.AssemblyInfo.cs
+C:\Users\debie\source\repos\WellBeingApp\WellBeingApp\obj\Debug\netstandard2.0\WellBeingApp.dll
+C:\Users\debie\source\repos\WellBeingApp\WellBeingApp\obj\Debug\netstandard2.0\ref\WellBeingApp.dll
+C:\Users\debie\source\repos\WellBeingApp\WellBeingApp\obj\Debug\netstandard2.0\WellBeingApp.pdb
+C:\Users\debie\source\repos\WellBeingApp\WellBeingApp\obj\Debug\netstandard2.0\Views\EntryPage.xaml.g.cs
+C:\Users\debie\source\repos\WellBeingApp\WellBeingApp\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\debie\source\repos\WellBeingApp\WellBeingApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\debie\source\repos\WellBeingApp\WellBeingApp\obj\Debug\netstandard2.0\Views\RegistrationPage.xaml.g.cs

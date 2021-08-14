@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             mc:Ignorable="d"
+             x:Class="WellBeingApp.Views.ProfilePage">
+    <NavigationPage.TitleView>
+        <Label x:Name="username_label"
+               HorizontalOptions="CenterAndExpand"
+               TextColor="White"
+               FontSize="Medium"/>
+    </NavigationPage.TitleView>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <forms:ChartView x:Name="ProfileChart" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="1"/>
+
+        <Label Text="Your Socre: 78%" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand" />
+
+        <ListView x:Name="listView" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"    >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame CornerRadius="5" BackgroundColor="White" BorderColor="#F0F0F0" Padding="5" Margin="5,5,5,5" HasShadow="False">
+                            <Grid HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label x:Name="entry_score" Grid.Column="0" />
+                                <Label x:Name="entry_sleeping" Grid.Column="1" />
+                                <Label x:Name="entry_food" Grid.Column="2" />
+                                <Label x:Name="entry_activities" Grid.Column="3" />
+                                <Label x:Name="entry_emotional" Grid.Column="4" />
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <StackLayout Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
+            <Button Text="Add"
+                Font="Medium"                   
+                BorderWidth="1"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                BackgroundColor="#0080FF"
+                TextColor="#FFF"
+                Clicked="AddClicked"
+                WidthRequest="500"
+                    Padding="0"
+                    Margin="0"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

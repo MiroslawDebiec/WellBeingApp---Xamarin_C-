@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WellBeingApp.Views.EntryPage"
+             BackgroundColor="White">
+    <NavigationPage.TitleView>
+        <Label Text="Submit Entry"
+               HorizontalOptions="CenterAndExpand"
+               TextColor="White"
+               FontSize="Large"/>
+    </NavigationPage.TitleView>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <StackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+            <Label Text="Select your sleep level" HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="Black"/>
+            <Slider x:Name="sleep_slider"
+                 Minimum="0"
+                 Maximum="100"
+                 VerticalOptions="CenterAndExpand"
+                 MinimumTrackColor="#0080FF"
+                 MaximumTrackColor="Gray"  
+                 ThumbColor="#0080FF"
+                 Value="{Binding Sleeping}"   />
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            <Label Text="Select your food habits" HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="Black"/>
+            <Slider x:Name="food_slider"
+                 Minimum="0"
+                 Maximum="100"
+                 VerticalOptions="CenterAndExpand"
+                 MinimumTrackColor="#0080FF"
+                 MaximumTrackColor="Gray"  
+                 ThumbColor="#0080FF"
+                 Value="{Binding Eatting}"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+            <Label Text="Select your activity level" HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="Black"/>
+            <Slider x:Name="activity_slider"
+                 Minimum="0"
+                 Maximum="100"
+                 VerticalOptions="CenterAndExpand"
+                 MinimumTrackColor="#0080FF"
+                 MaximumTrackColor="Gray"  
+                 ThumbColor="#0080FF"
+                 Value="{Binding Activity}"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
+            <Label Text="Select your Emotional level" HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="Black"/>
+            <Slider x:Name="emotional_slider"
+                 Minimum="0"
+                 Maximum="100"
+                 VerticalOptions="CenterAndExpand"
+                 MinimumTrackColor="#0080FF"
+                 MaximumTrackColor="Gray"  
+                 ThumbColor="#0080FF"
+                 Value="{Binding Emotional}"/>
+        </StackLayout>
+
+        <Button Text="Submit"
+                Font="Medium"                   
+                BorderWidth="1"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                BackgroundColor="#0080FF"
+                TextColor="#FFF"
+                Clicked="Submit_Clicked"
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                WidthRequest="500"/>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WellBeingApp.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="SharedLayout">
+
+            <StackLayout x:Name="LogoLayout" VerticalOptions="FillAndExpand">
+                <Image x:Name="LogoImage" Source="logo.png" Margin="0,80,0,0" />
+            </StackLayout>
+
+            <StackLayout  x:Name="UserCredentialsLayout" VerticalOptions="StartAndExpand">
+                <StackLayout.Padding>
+                    <OnIdiom x:TypeArguments="Thickness">
+                        <OnIdiom.Phone>40,0,40,0</OnIdiom.Phone>
+                    </OnIdiom>
+                </StackLayout.Padding>
+                <Button x:Name="btn_register" Text="Register" Clicked="Register_Clicked" />
+                <ActivityIndicator x:Name="Spinner" Color="Black" IsRunning="true"/>
+                <Label x:Name="label_username" Text="Username" />
+                <Entry x:Name="entry_username" Placeholder="Username" />
+                <Label x:Name="label_password" Text="Password" />
+                <Entry x:Name="entry_password" Placeholder="Password" />
+                <Button x:Name="signin" Text="Sign in" Clicked="SignIn_Clicked" 
+                        BackgroundColor="White"
+                        BorderColor="white"
+                        FontAttributes="Bold"
+                        CornerRadius="20"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
